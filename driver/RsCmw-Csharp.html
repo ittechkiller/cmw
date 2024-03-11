@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/dl_driver/mobiletesters/rscmw_1/csharp/RsCmw-Csharp.html -->
+<html class="writer-html5" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style>
+	body { font-family: consolas }
+</style>
+</head>
+<body>
+<p><b>Rohde &amp; Schwarz CMW Instrument drivers for C#.</b><br>
+The drivers follow the SCPI-tree structure of an instrument.<br>
+For example, the SCPI command:<br>
+<b>SYSTem:REFerence:FREQuency:SOURce</b><br>
+is represented as:<br>
+<b>Driver.System.Reference.Frequency.Source</b><br>
+<br>
+Supported instruments: <b>CMW500, CMW100, CMW270, CMW280</b><br>
+<br>
+Examples: <a href="https://github.com/Rohde-Schwarz/Examples/">https://github.com/Rohde-Schwarz/Examples/</a><br>
+<br>
+The packages are hosted here:  <a href="https://www.nuget.org/packages?q=RsCmw">https://www.nuget.org/packages?q=RsCmw</a>
+</p>
+--------------------------------------------------------------------------------&lt;
+<p>
+<b>Preconditions:</b>
+- Installed <a href="https://www.rohde-schwarz.com/appnote/1dc02">R&amp;S VISA 5.12+</a> or NI VISA 18.0+<br>
+- No VISA installation is necessary if you select the plugin SocketIO<br>
+- Your project uses one of the following Frameworks (or newer)<br>
+	- .NET Core 3.1<br>
+	- .NET Standard 2.1<br>
+	- .NET Framework 4.5<br>
+	- .NET Framework 4.8<br>
+<br>
+--------------------------------------------------------------------------------<br>
+<br>
+<b>Installation:</b><br>
+<br>
+<b>Option 1 - online installation</b> from <a href="https://www.nuget.org/">https://www.nuget.org</a>:<br>
+	- In your Visual Studio go to the top menu Tools -&gt; NuGet Packet Manager -&gt; Manage NuGet Packages for Solution...<br>
+	- At the top right, 'Package source' select 'nuget.org'<br>
+	- At the top left, select the tab 'Browse' , in the search box, enter 'RsCmw'. Select the desired found firmware application.<br>
+	- On the right side, check the project(s) in which you want to reference the package, and hit Install button<br>
+<br>
+<b>Option 2 - offline installation:</b><br>
+	- The easiest way is to set up a local repository (just a simple folder) for NuGet Packages.<br>
+	- Create a folder and copy all the *.nupkg files there<br>
+	- In your Visual Studio go to the top menu Tools -&gt; NuGet Packet Manager -&gt; Manage NuGet Packages for Solution...<br>
+	- At the top right, near the 'Package source' control, click on the cog wheel icon<br>
+	- Press plus icon. Give your new repository a name e.g.: 'Local' and for the 'Source' navigate to your created folder<br>
+	- After that, change the 'Package source' to your 'Local'<br>
+	- At the top left, select the tab 'Browse'<br>
+	- Select the desired package and install it to your project(s).<br>
+<br>
+
+</p></body></html>
